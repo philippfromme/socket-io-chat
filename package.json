@@ -1,0 +1,19 @@
+{
+  "name": "socket-io-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client:build": "cd client && npm run build",
+    "client:build:watch": "cd client && npm run build:watch",
+    "server:start": "cd server && nodemon index.js"
+  },
+  "author": "Philipp Fromme <github.com/philippfromme>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

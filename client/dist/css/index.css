@@ -1,0 +1,127 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  height: 100%;
+}
+
+.chat {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.set-name {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.set-name label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: blue;
+  margin-right: 1rem;
+}
+
+.set-name input {
+  outline: none;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+#form {
+  background: blue;
+  padding: 0.25rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+
+#input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+  font-family: 'Roboto', sans-serif;
+  color: #111;
+  font-size: 1rem;
+}
+
+#input:focus {
+  outline: none;
+}
+
+#form > button {
+  background: white;
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 2rem;
+  outline: none;
+  color: blue;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+#messages > .name {
+  margin-bottom: 0.25rem;
+}
+
+#messages > .chat-message {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  background: #eee;
+  color: #111;
+  display: inline-block;
+  align-self: flex-start;
+  border-radius: 2rem;
+}
+
+#messages > .chat-message.not-me {
+  background: blue;
+  color: white;
+  border-bottom-left-radius: 0;
+}
+
+#messages > .chat-message.me {
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+#messages > .chat-message.enter,
+#messages > .chat-message.leave,
+#messages > .chat-message.typing {
+  align-self: center;
+  background-color: transparent;
+  color: #ccc;
+}
